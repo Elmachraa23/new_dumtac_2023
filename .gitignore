@@ -1,0 +1,39 @@
+# git and dlls
+.git
+.idea
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+
+# tests and coverage
+*.pytest_cache
+.coverage
+
+# database & logs
+*.db
+*.logs
+/logs/
+migrations_/
+/migrations/
+
+# user uploads
+app/uploads/*
+app/base/static/pictures/
+
+# Deploy config files
+app.ini
+dev.ini
+.gcloudignore
+app.yaml
+
+# virtual Env
+/venv/
+
+# vs code scripts
+/.vscode/
+/migrations/
+/.venv/

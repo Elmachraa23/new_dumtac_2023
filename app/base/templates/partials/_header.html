@@ -1,0 +1,53 @@
+  <!-- Header -->
+  <header class="classic-menu invert-header" data-menucolor="#171717">
+    <div id="header-container">
+    
+    
+    <!-- Logo -->
+    <div id="logo" class="hide-ball">
+        <a class="ajax-link" data-type="page-transition" href="index.html">
+            <a href="{{url_for('site_blueprint.page_accueil')}}"><img class="black-logo" src="static/assets/images/LOGO_DUMTAC_FINAL_black.png" alt="ClaPat Logo"></a>
+            <a href="{{url_for('site_blueprint.page_accueil')}}"><img class="white-logo" src="static/assets/images/LOGO_DUMTAC_FINAL.png" alt="ClaPat Logo"></a>
+        </a>
+    </div>
+    <!--/Logo -->
+                
+    
+    <!-- Navigation -->
+    <nav> 
+        <div class="nav-height">
+            <div class="outer">
+                <div class="inner">           
+                    <ul data-breakpoint="1025" class="flexnav">
+                        <li class="link menu-timeline"><a class="active" href="{{url_for('site_blueprint.page_accueil')}}"><span data-hover="Home">Home</span></a></li>
+                        <!-- <li class="link menu-timeline"><a class="" href="#"><div class="before-span"><span data-hover="Portfolio">Portfolio</span></div></a></li> -->
+                        <!-- <li class="link menu-timeline"><a class="ajax-link" data-type="page-transition" href="about.html"><div class="before-span"><span data-hover="About">About</span></div></a></li> -->
+                        <li class="link menu-timeline"><a class="ajax-link" href="{{url_for('site_blueprint.contact_page')}}"><span data-hover="Contact">Contact</span></a></li>
+                    </ul>            
+                </div>
+            </div> 
+        </div>          
+    </nav> 
+    <!--/Navigation -->
+    
+    
+    <!-- Menu Burger -->
+    <div class="button-wrap right menu burger-lines">
+        <div class="icon-wrap parallax-wrap">
+            <div class="button-icon parallax-element">
+                <div id="burger-wrapper">
+                    <div id="menu-burger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="button-text sticky right"><span data-hover="Menu">Menu</span></div> 
+    </div>
+    <!--/Menu Burger -->
+
+    </div>
+</header>
+<!--/Header -->

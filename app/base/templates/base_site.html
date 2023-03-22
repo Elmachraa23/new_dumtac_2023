@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+
+<!--begin::Head-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>{% block title %} Index {% endblock title %}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/static/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- begin::Page specific css -->
+    {% block stylesheets %}{% endblock %}
+    <!-- end::Page specific css -->
+
+    {% include "styles.html" %}
+    <!-- Custom styles for this template -->
+    <link href="static/assets/css/style.css" rel="stylesheet" />
+    <link href="static/assets/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+
+
+
+</head>
+<!--end::Head-->
+
+<!--begin::Body-->
+<body class="hidden hidden-ball hero-below-caption smooth-scroll uppercase-text" data-primary-color="#a3834b">
+    <main>   
+        {% include 'partials/_page-loader.html' %}
+        <div class="cd-index cd-main-content">        
+            <!-- Page Content -->
+            <div id="page-content" class="dark-content" data-bgcolor="#eee">
+                {% include 'partials/_header.html' %}
+                <!-- Content Scroll -->
+                <div id="content-scroll">                    
+                    {% block content %}{% endblock %}
+                    <!-- begin::Footer -->
+                    {% include "partials/_footer.html" %}
+                    <!-- end::Footer -->
+                </div> 
+                {% include 'partials/thum-wrapper.html' %}
+        
+                <div id="app"></div>
+            </div>
+        </div>
+    </main>    
+    <!-- begin::Global scripts -->
+    {% include "scripts.html" %}
+    <!-- end::Global scripts -->
+    <!-- begin::Page specific JS -->
+    {% block javascripts %}{% endblock %}
+    <!-- end::Page specific JS -->
+
+</body>
+<!--end::Body-->
+
+</html>
